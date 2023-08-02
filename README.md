@@ -1,3 +1,5 @@
+<!-- @format -->
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -12,23 +14,37 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Husky and Commitlint Rules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In our project, we use Husky and Commitlint to enforce consistent commit message formats. The following rules are applied to commit messages:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **type-enum** or **type-case**: Specifies the allowed commit types and their case. The commit types should be one of the following:
 
-## Learn More
+  - feat: A new feature
+  - fix: A bug fix
+  - chore: Maintenance or build-related changes
+  - docs: Documentation changes
+  - style: Code style changes
+  - refactor: Code refactoring
+  - test: Testing-related changes
 
-To learn more about Next.js, take a look at the following resources:
+- **scope-enum**: Specifies the allowed commit scopes. The commit scopes should be one of the following:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - app: Application-specific changes
+  - server: Server-specific changes
+  - docs: Documentation-related changes
+  - config: Configuration changes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **subject-max-length**: The maximum length for the commit subject is 50 characters.
 
-## Deploy on Vercel
+- **body-max-line-length**: Each line in the commit body should not exceed 72 characters.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **subject-empty**: The commit subject should not be empty.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **footer-max-line-length**: Each line in the commit footer should not exceed 72 characters.
+
+By following these rules, we ensure that commit messages are consistent and provide clear information about the changes made in each commit.
+
+Please ensure that your commit messages adhere to these rules when making commits to the repository.
+
+For more details about the configuration and customization of these rules, refer to the `commitlint.config.js` file in the root of the project.
