@@ -45,7 +45,7 @@ Follow the steps below to set up the project on your local machine:
 ```bash
 git clone https://github.com/castelstack/castelstack-portfolio.git
 
-cd portfolio-v1
+cd castelstack-portfolio
 ```
 
 2. Install dependencies:
