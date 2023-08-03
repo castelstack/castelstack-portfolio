@@ -1,0 +1,58 @@
+.button {
+  font-family: "canela";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+
+  color: #fff;
+
+  border: solid 1px #ff3e01;
+  background: transparent;
+  border-radius: 10px;
+  width: max-content;
+  padding: 18px 27px;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::after {
+  height: 26px;
+  width: 26px;
+  content: "";
+  border-radius: 20rem;
+  background: #ff3e01;
+  /* transform: translate(-50%, 50%); */
+  position: absolute;
+  top: -18px;
+  left: -10px;
+  transition: all 1s ease;
+  z-index: -1;
+}
+
+.button > span {
+  z-index: 200;
+  transition: all 2s ease;
+}
+
+.button:hover.button::after {
+  height: 150%;
+  width: 100%;
+  border-radius: 0;
+  color: #fff;
+  top: 0;
+  left: 0;
+}
+.button:hover.button > span {
+  color: #fff;
+}
+
+.contactbutton {
+  justify-self: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}

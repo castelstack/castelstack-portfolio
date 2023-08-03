@@ -1,0 +1,72 @@
+.main {
+  position: relative;
+  /* overflow: hidden; */
+  animation: slide 0.5s ease;
+}
+
+.container {
+  /* min-height: 100vh; */
+  width: 100%;
+
+  transform: translateX(0);
+  transition: all 0.5s ease;
+  z-index: 300;
+
+  overflow: hidden;
+  /* height: 100vh; */
+  width: 100%;
+  position: relative;
+  /* animation: slideUpDown 5s  infinite cubic-bezier(.19,.41,.5,.49); */
+}
+
+.container.containerOpen {
+  transform: translateX(-15rem);
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.button {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 500;
+}
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  z-index: 500;
+  width: 40px;
+  height: 40px;
+}
+
+.content {
+  max-width: 1200px;
+}
+
+@media (max-width: 650px) {
+  .container.containerOpen {
+    transform: translateX(-13rem);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+
+  .button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  .logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-200rem) rotate3d(20deg);
+    opacity: 0;
+  }
+}
