@@ -70,7 +70,7 @@ Replace NEXT_PUBLIC_GIT_KEY with your own.
 For the most up-to-date information and documentation about the GitHub API, you can visit the GitHub Developer documentation at: [https://developer.github.com/v3/](https://developer.github.com/v3/). This documentation provides detailed information on how to interact with the GitHub API and what endpoints are available.
 
 ```bash
-NEXT_PUBLIC_GIT_KEY="your-public-key"
+NEXT_PUBLIC_GIT_KEY="your_public_key"
 ```
 
 4. Run the development server:
