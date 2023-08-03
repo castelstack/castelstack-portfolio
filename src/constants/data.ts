@@ -9,6 +9,7 @@ export const information: any = {
     description:
       "Experienced software engineer with a strong focus on creating efficient and scalable user-facing systems based on cohesive design blueprints. Dedicated to achieving company goals and objectives while leading and supporting teams.",
     resumeLink: "https://docs.google.com/document/d/1aG0vStz6T3MPsEubpvDT_nZP92vPWw6G6hnsYXivmzs",
+    githubLink: "https://github.com/castelstack"
   },
   skills: {
     description: "My skills acquired from vast project worked on and from frontend developement",

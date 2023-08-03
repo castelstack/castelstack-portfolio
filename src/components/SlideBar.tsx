@@ -10,7 +10,7 @@ const SlideBar = ({open, setOpen}: {open: boolean; setOpen: any}) => {
     {text: "home", link: "/"},
     {text: "skills", link: "/skills"},
     {text: "projects", link: "/projects"},
-    {text: "experiences", link: "/experiences"},
+    {text: "experience", link: "/experience"},
     {text: "about", link: `/about/${information.home.githubUserName}`},
     {text: "contact", link: "/contact"},
   ];
