@@ -21,7 +21,7 @@ export const useFetchUserGit = ({
         `https://api.github.com/users/${username}/repos?sort=updated`,
         {
           headers: {
-            Authorization: `token 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`,
+            Authorization: `token ${process.env.NEXT_PUBLIC_GIT_KEY}`,
           },
         }
       );
@@ -39,7 +39,7 @@ export const useFetchUserGit = ({
       await axios
         .get(`https://api.github.com/users/${username}`, {
           headers: {
-            Authorization: `token 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`,
+            Authorization: `token ${process.env.NEXT_PUBLIC_GIT_KEY}`,
           },
         })
         .then(async (res) => {
@@ -48,7 +48,7 @@ export const useFetchUserGit = ({
           await axios
             .get(res?.data?.organizations_url, {
               headers: {
-                Authorization: `token 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`,
+                Authorization: `token ${process.env.NEXT_PUBLIC_GIT_KEY}`,
               },
             })
             .then((result) => {

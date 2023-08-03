@@ -23,7 +23,7 @@ const RepoInformation: NextComponentType<NextPageContext, {}, any> = ({item, ind
           `https://api.github.com/repos/${repos[index]?.owner?.login}/${repos[index]?.name}/contributors`,
           {
             headers: {
-              Authorization: `token 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`,
+              Authorization: `token ${process.env.NEXT_PUBLIC_GIT_KEY}`,
             },
           }
         )
@@ -37,7 +37,7 @@ const RepoInformation: NextComponentType<NextPageContext, {}, any> = ({item, ind
                 `https://api.github.com/repos/${repos[index]?.owner?.login}/${repos[index]?.name}/languages`,
                 {
                   headers: {
-                    Authorization: `token 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`,
+                    Authorization: `token ${process.env.NEXT_PUBLIC_GIT_KEY}`,
                   },
                 }
               )
