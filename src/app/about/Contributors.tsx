@@ -37,30 +37,17 @@ const Contributors = ({langKeys, contributors}: any) => {
           </div>
         </div>
       )}
-      {/* langKeys */}
       {langKeys?.length >= 1 && (
         <div className="flex flex-col my-4">
           <p className="text-sm text-gray-400 tracking-wide font-bold capitalize">language</p>
 
           <div className="flex items-center py-1">
             <div className="flex items-center lowercase gap-2">
-              {langKeys?.map(
-                (item: any, i: number) => (
-                  <h2 className="text-base text-text tracking-wide font-bold capitalize" key={i}>
-                    {item}
-                  </h2>
-                )
-                // {/* <Image
-
-                //   src={require(`../../../public/icons/` + `${item?.toLowerCase()}.svg`) }
-                //   className='h-[35px] w-[35px] rounded-full '
-                //   width={35}
-                //   height={35}
-                //   alt={item}
-                //   title={item}
-                //   loading="lazy"
-                // /> */}
-              )}
+              {langKeys?.map((item: any, i: number) => (
+                <h2 className="text-base text-text tracking-wide font-bold capitalize" key={i}>
+                  {item}
+                </h2>
+              ))}
             </div>{" "}
             {langKeys?.length - 5 > 0 && (
               <p className="text-base ml-2 text-text tracking-wide leading-7">

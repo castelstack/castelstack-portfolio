@@ -32,4 +32,3 @@ export type InfoImageProp = {
   id: string;
   description: string;
 };
-
