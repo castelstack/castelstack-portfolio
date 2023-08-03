@@ -30,7 +30,6 @@ export const useFetchUserGit = ({
       setRepos(reposData);
     } catch (error: any) {
       setLoad(false);
-      console.log(error.message);
       isError(error.message);
     }
   };
@@ -59,7 +58,7 @@ export const useFetchUserGit = ({
         .then(() => {
           fetchUsernameData(username as string);
         })
-        .catch((err) => {
+        .catch(() => {
           setLoad(false);
         });
     },

@@ -6,8 +6,6 @@ import {usePathname} from "next/navigation";
 const SlideBar = ({open, setOpen}: {open: boolean; setOpen: any}) => {
   const pathname = usePathname();
 
-  console.log(pathname, "pathname");
-
   const links = [
     {text: "home", link: "/"},
     {text: "skills", link: "/skills"},

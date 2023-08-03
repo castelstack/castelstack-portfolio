@@ -1,4 +1,4 @@
-import { InfoImageProp, InfoProp } from "@/types";
+import {InfoImageProp, InfoProp} from "@/types";
 import Image from "next/image";
 
 export const InfoLayout = ({title, texts}: InfoProp) => (
@@ -12,7 +12,7 @@ export const InfoLayout = ({title, texts}: InfoProp) => (
   </>
 );
 
-export const InfoOrgLayout = ({title, list}: {title:string, list: InfoImageProp[]}) => (
+export const InfoOrgLayout = ({title, list}: {title: string; list: InfoImageProp[]}) => (
   <>
     {list?.length > 1 && (
       <div className="flex flex-col mb-2">

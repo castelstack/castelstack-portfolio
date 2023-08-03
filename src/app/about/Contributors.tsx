@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const item = "Jupyter Notebook";
-console.log("../../../assets/icons/" + `${item?.toLowerCase()}.svg`, "svg");
+// const item = "Jupyter Notebook";
+// console.log("../../../assets/icons/" + `${item?.toLowerCase()}.svg`, "svg");
+
 const Contributors = ({langKeys, contributors}: any) => {
-  // console.log(langKeys, "keys");
   return (
     <div className="flex flex-row gap-2 justify-between py-2 my-1 border-t border-white/10 ">
       {contributors?.length >= 1 && (
