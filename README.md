@@ -3,14 +3,15 @@
 markdown
 
 ## Portfolio Website
+
 Welcome to my personal portfolio website built using Next.js, AOS (Animate On Scroll), Tailwind CSS, and Axios. This website showcases my projects, skills, and provides information about me.
 
 ## Live Demo
 
 Check out the live demo of the portfolio website: [https://henrydev-portfolio.vercel.app/](https://henrydev-portfolio.vercel.app/)
 
-
 ## Technologies Used
+
 Next.js: Next.js is a powerful React framework that allows for server-side rendering and easy creation of fast and scalable web applications.
 
 AOS (Animate On Scroll): AOS is a lightweight library for animating elements on scroll. It adds beautiful fade-in and slide-up animations to make the user experience more engaging.
@@ -20,6 +21,7 @@ Tailwind CSS: Tailwind CSS is a utility-first CSS framework that helps in rapid 
 Axios: Axios is a popular promise-based HTTP client used for making API requests. It enables seamless communication with external APIs.
 
 ## Features
+
 Responsive Design: The website is designed to provide an optimal viewing experience across different devices and screen sizes.
 
 Animated Transitions: AOS adds smooth animations to various sections of the website, creating an attractive and user-friendly interface.
@@ -64,6 +66,8 @@ yarn install
 
 Create a .env.local file in the root of the project and add the following:
 Replace NEXT_PUBLIC_GIT_KEY with your own.
+
+For the most up-to-date information and documentation about the GitHub API, you can visit the GitHub Developer documentation at: [https://developer.github.com/v3/](https://developer.github.com/v3/). This documentation provides detailed information on how to interact with the GitHub API and what endpoints are available.
 
 ```bash
 NEXT_PUBLIC_GIT_KEY="your-public-key"
