@@ -1,7 +1,7 @@
+import { InfoImageProp, InfoProp } from "@/types";
 import Image from "next/image";
-import {listenerCount} from "process";
 
-export const InfoLayout = ({title, texts}) => (
+export const InfoLayout = ({title, texts}: InfoProp) => (
   <>
     {texts && (
       <div className="flex flex-col mb-2">
@@ -12,7 +12,7 @@ export const InfoLayout = ({title, texts}) => (
   </>
 );
 
-export const InfoOrgLayout = ({title, list}) => (
+export const InfoOrgLayout = ({title, list}: {title:string, list: InfoImageProp[]}) => (
   <>
     {list?.length > 1 && (
       <div className="flex flex-col mb-2">
@@ -39,7 +39,7 @@ export const InfoOrgLayout = ({title, list}) => (
   </>
 );
 
-export const InfoStat = ({title, texts}) => (
+export const InfoStat = ({title, texts}: InfoProp) => (
   <div className="flex flex-col mb-2">
     <p className="text-sm text-gray-400 tracking-wide font-bold capitalize">{title}</p>
     <p className="text-2xl text-gray-300 tracking-wide leading-7">{texts}</p>
@@ -77,6 +77,7 @@ export const LinkedIn = () => {
     </svg>
   );
 };
+
 export const Gmail = () => {
   return (
     <svg
@@ -92,6 +93,7 @@ export const Gmail = () => {
     </svg>
   );
 };
+
 export const ArrowDown = () => {
   return (
     <svg
@@ -106,6 +108,7 @@ export const ArrowDown = () => {
     </svg>
   );
 };
+
 export const Minus = () => {
   return (
     <svg
