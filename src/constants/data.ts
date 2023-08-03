@@ -149,16 +149,15 @@ export const information: any = {
       left: true,
       link: "https://tournest.art",
     },
-    {
-      name: "the X studio",
-      icon: "/images/xstudio.png",
-      left: false,
-      description:
-        " This website is built to maintain a high level of stability and performance, using the best and most efficient tools available. It is also optimized to ensure a smooth, uninterrupted user experience. The web application is designed with accessibility and usability in mind, making sure that all users can have a pleasant and successful experience while visiting your website.",
-      link: "https://thexstudio.net",
-      stack: ["react", "Typescript", "CSS", "html"],
-    },
-
+    // {
+    //   name: "the X studio",
+    //   icon: "/images/xstudio.png",
+    //   left: false,
+    //   description:
+    //     " This website is built to maintain a high level of stability and performance, using the best and most efficient tools available. It is also optimized to ensure a smooth, uninterrupted user experience. The web application is designed with accessibility and usability in mind, making sure that all users can have a pleasant and successful experience while visiting your website.",
+    //   link: "https://thexstudio.net",
+    //   stack: ["react", "Typescript", "CSS", "html"],
+    // },
     {
       name: "hire us",
       icon: "/images/hireus.png",
