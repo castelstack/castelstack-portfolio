@@ -44,9 +44,9 @@ const RepoInformation: NextComponentType<NextPageContext, {}, any> = ({item, ind
               .then((res) => {
                 setLanguages(res?.data);
               })
-              // .catch((err) => {
-              //   console.log(err);
-              // })
+          // .catch((err) => {
+          //   console.log(err);
+          // })
         )
         // .catch((err) => {
         //   console.log(err);

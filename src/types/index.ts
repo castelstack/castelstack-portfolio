@@ -33,4 +33,3 @@ export type InfoImageProp = {
   description: string;
 };
 
-interface Info extends InfoImageProp {}
