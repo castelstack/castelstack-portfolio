@@ -36,27 +36,38 @@ Follow the steps below to set up the project on your local machine:
 git clone https://github.com/castelstack/portfolio-v1.git
 
 cd portfolio-v1
+```
 
+2. Install dependencies:
 
-Install dependencies:
-
+```bash
 yarn install
+```
 
-yarn  dev
+if downloaded as zip file
 
-Set environment variables:
+```bash
+git init
+# to make sure husky is installed
+yarn install
+```
+
+3. Set environment variables:
+
+
 Create a .env.local file in the root of the project and add the following:
-
-env
 Replace NEXT_PUBLIC_GIT_KEY with your own.
 
-Run the development server:
+```bash
+NEXT_PUBLIC_GIT_KEY="your-public-key"
+```
+4. Run the development server:
 
+```bash
 yarn dev
 ```
 
 Open your browser and navigate to http://localhost:3000 to see the portfolio website.
-
 
 Project Structure
 
@@ -87,14 +98,13 @@ Project Structure
 ...
 ```
 
-
 Adding New Projects
-To change content in the project to the portfolio, simply locate the constants/data.ts and create a new object or change content directly as it would reflect the change with information provided. Background text  can be changed in the app/global.css file line 127 and line 229. 
+To change content in the project to the portfolio, simply locate the constants/data.ts and create a new object or change content directly as it would reflect the change with information provided. Background text can be changed in the app/global.css file line 127 and line 229.
 
 ## Husky and Commitlint Rules
 
 In our project, we use Husky and Commitlint to enforce consistent commit message formats. The following rules are applied to commit messages:
-
+```bash
 - **type-enum** or **type-case**: Specifies the allowed commit types and their case. The commit types should be one of the following:
 
   - feat: A new feature
@@ -119,6 +129,7 @@ In our project, we use Husky and Commitlint to enforce consistent commit message
 - **subject-empty**: The commit subject should not be empty.
 
 - **footer-max-line-length**: Each line in the commit footer should not exceed 72 characters.
+```
 
 By following these rules, we ensure that commit messages are consistent and provide clear information about the changes made in each commit.
 
@@ -126,15 +137,12 @@ Please ensure that your commit messages adhere to these rules when making commit
 
 For more details about the configuration and customization of these rules, refer to the `commitlint.config.js` file in the root of the project.
 
-
-
-Contributions
+## Contributions
 Contributions are welcome! If you find any bugs or have suggestions for improvement, feel free to open an issue or create a pull request.
 
-License
+## License
 This project is licensed under the MIT License.
 
 Thank you for checking out my portfolio project! If you have any questions or feedback, feel free to contact me through the contact form on the website.
 
 Happy coding! 🚀
-
