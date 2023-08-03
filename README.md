@@ -8,7 +8,7 @@ Welcome to my personal portfolio website built using Next.js, AOS (Animate On Sc
 
 ## Live Demo
 
-Check out the live demo of the portfolio website: [https://henrydev-portfolio.vercel.app/](https://henrydev-portfolio.vercel.app/)
+Check out the live demo of the portfolio website: [https://castelstack-portfolio.vercel.app](https://castelstack-portfolio.vercel.app)
 
 ## Technologies Used
 
@@ -43,7 +43,7 @@ Follow the steps below to set up the project on your local machine:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/castelstack/portfolio-v1.git
+git clone https://github.com/castelstack/castelstack-portfolio.git
 
 cd portfolio-v1
 ```
